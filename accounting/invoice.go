@@ -227,6 +227,14 @@ func FindInvoice(provider *xerogolang.Provider, session goth.Session, invoiceID 
 	return unmarshalInvoice(invoiceResponseBytes)
 }
 
+func GetInvoicePdf(provider *xerogolang.Provider, session goth.Session, invoiceID string) ([]byte, error) {
+	additionalHeaders := map[string]string{
+		"Accept": "application/pdf",
+	}
+
+	return provider.Find(session, "Invoices/"+ invoiceID, additionalHeaders, nil)
+}
+
 //GenerateExampleInvoice Creates an Example invoice
 func GenerateExampleInvoice() *Invoices {
 	lineItem := LineItem{
