@@ -5,8 +5,8 @@ import (
 	"encoding/xml"
 	"time"
 
-	"github.com/XeroAPI/xerogolang"
-	"github.com/XeroAPI/xerogolang/helpers"
+	"github.com/jessicacglenn/xerogolang"
+	"github.com/jessicacglenn/xerogolang/helpers"
 	"github.com/markbates/goth"
 )
 

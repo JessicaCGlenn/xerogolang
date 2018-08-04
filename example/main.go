@@ -10,8 +10,8 @@ import (
 
 	"math"
 
-	"github.com/XeroAPI/xerogolang"
-	"github.com/XeroAPI/xerogolang/accounting"
+	"github.com/jessicacglenn/xerogolang"
+	"github.com/jessicacglenn/xerogolang/accounting"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 	"github.com/markbates/goth"

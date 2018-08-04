@@ -17,7 +17,7 @@ import (
 
 	"crypto"
 
-	"github.com/XeroAPI/xerogolang/helpers"
+	"github.com/jessicacglenn/xerogolang/helpers"
 	"github.com/markbates/goth"
 	"github.com/markbates/goth/gothic"
 	"github.com/mrjones/oauth"
