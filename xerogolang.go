@@ -140,6 +140,19 @@ func New(clientKey, secret, callbackURL string) *Provider {
 	return p
 }
 
+func NewWithKey(clientKey, secret, callbackURL, userAgent, method string, pkey string) *Provider {
+	p := &Provider{
+		ClientKey: clientKey,
+		Secret: secret,
+		CallbackURL: callbackURL,
+		Method: method,
+		providerName: "xero",
+		UserAgentString:  userAgent + " (xerogolang 0.1.2) " + clientKey,
+		PrivateKey: pkey,
+	}
+	return p
+}
+
 // New creates a new Xero provider, with a custom http client
 func NewCustomHTTPClient(clientKey, secret, callbackURL string, httpClient *http.Client) *Provider {
 	p := &Provider{
